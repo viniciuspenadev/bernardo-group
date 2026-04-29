@@ -14,7 +14,7 @@ const outfit = Outfit({
 
 
 export const metadata: Metadata = {
-  title: "Bernardo Group | Premium Holding",
+  title: "Bernardo Group",
   description: "Bernardo Group é a holding que administra as empresas Bernardo Concept, Bernardo Construtora e TechnoGlass de Vidros.",
 };
 
