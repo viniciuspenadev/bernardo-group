@@ -29,7 +29,7 @@ export default function Hero({ dict }: { dict: any }) {
     <section className="hero-slider">
       {/* Background Images Layer */}
       <div className="hero-bg-layer">
-        {slides.map((slide, index) => (
+        {slides.map((slide: any, index: number) => (
           <div 
             key={index} 
             className={`slide-bg ${currentSlide === index ? "active" : ""}`}
@@ -50,7 +50,7 @@ export default function Hero({ dict }: { dict: any }) {
       <div className="hero-nav-left">
         <div className="vertical-nav-line"></div>
         <div className="nav-numbers">
-          {slides.map((_, index) => (
+          {slides.map((_: any, index: number) => (
             <button 
               key={index}
               onClick={() => setCurrentSlide(index)}
@@ -65,7 +65,7 @@ export default function Hero({ dict }: { dict: any }) {
 
       {/* Content Overlay */}
       <div className="hero-content-overlay">
-        {slides.map((slide, index) => (
+        {slides.map((slide: any, index: number) => (
           <div 
             key={index} 
             className={`slide-content-glass ${currentSlide === index ? "active" : ""}`}

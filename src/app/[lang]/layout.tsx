@@ -26,7 +26,7 @@ export default async function RootLayout(
 ) {
   const params = await props.params;
   return (
-    <html lang={params.lang} className={`${inter.variable} ${outfit.variable}`}>
+    <html lang={params.lang} className={`${inter.variable} ${outfit.variable}`} data-scroll-behavior="smooth">
 
       <body>{props.children}</body>
     </html>
