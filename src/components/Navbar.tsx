@@ -25,7 +25,7 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
             height={120} 
             priority
             className="navbar-logo"
-            style={{ width: "auto", height: "auto" }}
+            style={{ width: '350px', maxWidth: '100%', height: 'auto' }}
           />
         </Link>
         <div className="nav-links">
