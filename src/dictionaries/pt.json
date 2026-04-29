@@ -1,0 +1,60 @@
+{
+  "navbar": {
+    "about": "Sobre a Holding",
+    "companies": "Nossas Empresas",
+    "investors": "Investidores",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title_1": "Construindo o Futuro,",
+    "title_2": "Moldando o Horizonte.",
+    "subtitle": "A holding que administra a excelência através do design, da engenharia e da tecnologia em vidros.",
+    "cta": "Conheça o Grupo"
+  },
+  "companies": {
+    "title": "Nossas Empresas",
+    "subtitle": "Um portfólio robusto operando nos mais altos padrões do mercado.",
+    "concept": {
+      "desc": "Excelência em design, arquitetura e exclusividade imobiliária de alto padrão.",
+      "tag": "Arquitetura & Design"
+    },
+    "construtora": {
+      "desc": "Sólida experiência em construção civil com foco na durabilidade e sustentabilidade.",
+      "tag": "Construção Civil"
+    },
+    "technoglass": {
+      "desc": "Tecnologia de ponta em envidraçamento para projetos corporativos e residenciais luxuosos.",
+      "tag": "Vidros e Tecnologia"
+    },
+    "read_more": "Saiba mais"
+  },
+  "footer": {
+    "slogan": "Exclusividade, Solidez e Inovação.",
+    "col1": "Empresas",
+    "col2": "Corporativo",
+    "links": {
+      "about": "Sobre a Holding",
+      "investors": "Relações com Investidores",
+      "careers": "Carreiras"
+    },
+    "copyright": "Bernardo Group Holding. Todos os direitos reservados."
+  },
+  "governance": {
+    "title": "Governança Corporativa",
+    "subtitle": "Nosso compromisso com a excelência e a criação de valor a longo prazo.",
+    "solidity_title": "Solidez Financeira",
+    "solidity_desc": "Estrutura de capital robusta e gestão transparente garantindo crescimento constante e segurança aos nossos investidores.",
+    "innovation_title": "Inovação & Design",
+    "innovation_desc": "Na vanguarda das tendências globais, expandimos os limites da arquitetura e da tecnologia de vidros.",
+    "esg_title": "Sustentabilidade (ESG)",
+    "esg_desc": "Comprometidos com práticas sustentáveis, projetos ecoeficientes e impacto social positivo em cada operação."
+  },
+  "presence": {
+    "title": "Presença Global",
+    "subtitle": "Conectando mercados estratégicos com excelência operacional.",
+    "usa_title": "Estados Unidos",
+    "usa_desc": "Hub de Operações Globais & Investimentos Internacionais.",
+    "br_title": "Brasil",
+    "br_desc": "Centro de Execução & Desenvolvimento de Projetos de Alto Padrão."
+  }
+}

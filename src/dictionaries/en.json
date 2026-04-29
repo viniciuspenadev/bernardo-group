@@ -1,0 +1,60 @@
+{
+  "navbar": {
+    "about": "About the Holding",
+    "companies": "Our Companies",
+    "investors": "Investors",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title_1": "Building the Future,",
+    "title_2": "Shaping the Horizon.",
+    "subtitle": "The holding that manages excellence through design, engineering, and glass technology.",
+    "cta": "Meet the Group"
+  },
+  "companies": {
+    "title": "Our Companies",
+    "subtitle": "A robust portfolio operating at the highest market standards.",
+    "concept": {
+      "desc": "Excellence in design, architecture, and high-end exclusive real estate.",
+      "tag": "Architecture & Design"
+    },
+    "construtora": {
+      "desc": "Solid experience in civil construction focusing on durability and sustainability.",
+      "tag": "Civil Construction"
+    },
+    "technoglass": {
+      "desc": "Cutting-edge glazing technology for luxurious corporate and residential projects.",
+      "tag": "Glass and Technology"
+    },
+    "read_more": "Learn more"
+  },
+  "footer": {
+    "slogan": "Exclusivity, Solidity and Innovation.",
+    "col1": "Companies",
+    "col2": "Corporate",
+    "links": {
+      "about": "About the Holding",
+      "investors": "Investor Relations",
+      "careers": "Careers"
+    },
+    "copyright": "Bernardo Group Holding. All rights reserved."
+  },
+  "governance": {
+    "title": "Corporate Governance",
+    "subtitle": "Our commitment to excellence and long-term value creation.",
+    "solidity_title": "Financial Solidity",
+    "solidity_desc": "Robust capital structure and transparent management ensuring steady growth and security for our investors.",
+    "innovation_title": "Innovation & Design",
+    "innovation_desc": "At the forefront of global trends, we push the boundaries of architecture and glass technology.",
+    "esg_title": "ESG & Sustainability",
+    "esg_desc": "Committed to sustainable practices, eco-efficient projects, and positive social impact in every operation."
+  },
+  "presence": {
+    "title": "Global Presence",
+    "subtitle": "Connecting strategic markets with operational excellence.",
+    "usa_title": "United States",
+    "usa_desc": "Global Operations Hub & International Investments.",
+    "br_title": "Brazil",
+    "br_desc": "Execution Center & High-End Projects Development."
+  }
+}
