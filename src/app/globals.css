@@ -649,8 +649,8 @@ h6 {
 
 .footer-contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
   padding: 0 6rem;
   position: relative;
   z-index: 10;
@@ -1029,20 +1029,20 @@ h6 {
   color: #888;
 }
 
-/* Company Logos Bar */
+/* Company Logos Bar with Marquee */
 .company-logos-bar {
   background: #050507;
-  padding: 3rem 0;
+  padding: 4rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   position: relative;
   z-index: 50;
+  overflow: hidden;
 }
 
-.logos-container {
+.logos-label-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
 }
 
 .logos-label {
@@ -1051,44 +1051,77 @@ h6 {
   color: #444;
   text-transform: uppercase;
   font-weight: 800;
+  position: relative;
 }
 
-.logos-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6rem;
+.logos-label::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 1px;
+  background: rgba(228, 228, 231, 0.2);
+}
+
+.marquee-wrapper {
   width: 100%;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.marquee-content {
+  display: flex;
+  gap: 6rem;
+  width: max-content;
+  animation: marquee-scroll 30s linear infinite;
+  padding: 1rem 0;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .logo-item {
-  opacity: 0.6;
+  opacity: 0.5;
   transition: all 0.4s ease;
   cursor: default;
+  display: flex;
+  align-items: center;
 }
 
 .logo-item:hover {
   opacity: 1;
-  transform: translateY(-2px);
 }
 
 .logo-text-styled {
   font-family: var(--font-outfit);
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   white-space: nowrap;
 }
 
-/* Logos Refined for Mobile */
 @media (max-width: 768px) {
-  .logos-grid {
-    flex-wrap: wrap;
-    gap: 3rem;
+  .company-logos-bar {
+    padding: 3rem 0;
   }
-
+  
   .logo-text-styled {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+  }
+  
+  .marquee-content {
+    gap: 4rem;
+    animation: marquee-scroll 20s linear infinite;
   }
 }
 
@@ -1300,6 +1333,46 @@ h6 {
 
   .hamburger-btn {
     display: flex !important;
+  }
+
+  /* --- MOBILE FOOTER REFINEMENTS --- */
+  .footer {
+    padding: 6rem 0 0;
+  }
+
+  .footer-title-huge {
+    font-size: 15vw;
+    margin-bottom: 4rem;
+    padding: 0 1.5rem;
+  }
+
+  .footer-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+
+  .f-contact-item h4 {
+    margin-bottom: 1rem;
+  }
+
+  .f-contact-item p,
+  .f-contact-item a {
+    font-size: 1rem;
+  }
+
+  .footer-bottom {
+    margin-top: 6rem;
+    padding: 2rem 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .f-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
   }
 }
 

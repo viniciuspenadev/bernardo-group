@@ -16,13 +16,13 @@ export default async function Home(props: { params: Promise<{ lang: string }> })
 
   return (
     <main className="main-content">
-      <Navbar dict={dict.navbar} lang={params.lang} />
-      <Hero dict={dict.hero} />
+      <Navbar dict={dict} lang={params.lang} />
+      <Hero dict={dict} />
       <CompanyLogos />
-      <Companies dict={dict.companies} />
-      <Segments />
+      <Companies dict={dict} />
+      <Segments dict={dict} />
       <GlobalPresence dict={dict} />
-      <Footer dict={dict.footer} />
+      <Footer dict={dict} />
     </main>
   );
 }

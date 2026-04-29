@@ -45,13 +45,13 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
 
           {/* Desktop Nav */}
           <div className="nav-links">
-            <Link href={`/${lang}#about`}>{dict.about}</Link>
-            <Link href={`/${lang}#empresas`}>{dict.companies}</Link>
-            <Link href={`/${lang}#investidores`}>{dict.investors}</Link>
+            <Link href={`/${lang}#about`}>{dict.navbar.about}</Link>
+            <Link href={`/${lang}#empresas`}>{dict.navbar.companies}</Link>
+            <Link href={`/${lang}#investidores`}>{dict.navbar.investors}</Link>
             <Link href={toggleLang()} className="lang-switcher">
               {lang === "en" ? "PT" : "EN"}
             </Link>
-            <Link href={`/${lang}#contato`} className="btn-primary">{dict.contact}</Link>
+            <Link href={`/${lang}#contato`} className="btn-primary">{dict.navbar.contact}</Link>
           </div>
 
           {/* Hamburger Button (Mobile Only) */}
@@ -82,16 +82,16 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
         <div className="premium-menu-content">
           <div className="premium-menu-links">
             <div className="nav-item-wrapper" style={{ transitionDelay: '0.1s' }}>
-              <Link href={`/${lang}#about`} onClick={closeMenu}>{dict.about}</Link>
+              <Link href={`/${lang}#about`} onClick={closeMenu}>{dict.navbar.about}</Link>
             </div>
             <div className="nav-item-wrapper" style={{ transitionDelay: '0.2s' }}>
-              <Link href={`/${lang}#empresas`} onClick={closeMenu}>{dict.companies}</Link>
+              <Link href={`/${lang}#empresas`} onClick={closeMenu}>{dict.navbar.companies}</Link>
             </div>
             <div className="nav-item-wrapper" style={{ transitionDelay: '0.3s' }}>
-              <Link href={`/${lang}#investidores`} onClick={closeMenu}>{dict.investors}</Link>
+              <Link href={`/${lang}#investidores`} onClick={closeMenu}>{dict.navbar.investors}</Link>
             </div>
             <div className="nav-item-wrapper" style={{ transitionDelay: '0.4s' }}>
-              <Link href={`/${lang}#contato`} onClick={closeMenu}>{dict.contact}</Link>
+              <Link href={`/${lang}#contato`} onClick={closeMenu}>{dict.navbar.contact}</Link>
             </div>
           </div>
           
@@ -101,8 +101,8 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
               <Link href={pathname?.replace(`/${lang}`, '/en') || '/en'} onClick={closeMenu} className={lang === 'en' ? 'active' : ''}>EN</Link>
             </div>
             <div className="premium-menu-contact">
-              <a href="mailto:contato@bernardogroup.com.br">contato@bernardogroup.com.br</a>
-              <a href="tel:+554733333333">+55 47 3333-3333</a>
+              <a href="mailto:contato@bernardogroup.com.br">{dict.presence.general}: contato@bernardogroup.com.br</a>
+              <a href="tel:+551130310000">SP: +55 11 3031-0000</a>
             </div>
           </div>
         </div>

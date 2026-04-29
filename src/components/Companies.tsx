@@ -1,23 +1,24 @@
 import Image from "next/image";
 
 export default function Companies({ dict }: { dict: any }) {
+  const compDict = dict.companies;
   const companies = [
     {
       name: "Bernardo Concept",
-      description: dict.concept.desc,
-      tag: dict.concept.tag,
+      description: compDict.concept.desc,
+      tag: compDict.concept.tag,
       logo: "/bernardo-concept-logo.webp"
     },
     {
       name: "Bernardo Construtora",
-      description: dict.construtora.desc,
-      tag: dict.construtora.tag,
+      description: compDict.construtora.desc,
+      tag: compDict.construtora.tag,
       logo: "/logo_bernardo_construtura.webp"
     },
     {
       name: "TechnoGlass",
-      description: dict.technoglass.desc,
-      tag: dict.technoglass.tag,
+      description: compDict.technoglass.desc,
+      tag: compDict.technoglass.tag,
       logo: null
     }
   ];
@@ -26,8 +27,8 @@ export default function Companies({ dict }: { dict: any }) {
     <section id="empresas" className="companies-section">
       <div className="container">
         <div className="section-header">
-          <h2 className="text-silver">{dict.title}</h2>
-          <p>{dict.subtitle}</p>
+          <h2 className="text-silver">{compDict.title}</h2>
+          <p>{compDict.subtitle}</p>
         </div>
         <div className="companies-grid">
           {companies.map((company, index) => (
@@ -47,7 +48,7 @@ export default function Companies({ dict }: { dict: any }) {
                 )}
               </div>
               <p>{company.description}</p>
-              <a href="#" className="read-more">{dict.read_more} &rarr;</a>
+              <a href="#" className="read-more">{compDict.read_more} &rarr;</a>
             </div>
           ))}
         </div>

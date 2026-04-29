@@ -9,21 +9,27 @@ export default function Footer({ dict }: { dict: any }) {
 
       <div className="footer-contact-grid">
         <div className="f-contact-item">
-          <h4>Escritório Brasil</h4>
-          <p>Balneário Camboriú, SC</p>
-          <a href="tel:+554733333333">+55 47 3333-3333</a>
+          <h4>{dict.presence.office_br_sp}</h4>
+          <p>{dict.presence.address_sp}</p>
+          <a href="tel:+551130310000">+55 11 3031-0000</a>
+        </div>
+
+        <div className="f-contact-item">
+          <h4>{dict.presence.office_br_cp}</h4>
+          <p>{dict.presence.address_cp}</p>
+          <a href="tel:+551933333333">+55 19 3333-3333</a>
         </div>
         
         <div className="f-contact-item">
-          <h4>Miami Office</h4>
+          <h4>{dict.presence.office_usa}</h4>
           <p>Brickell Ave, Miami, FL</p>
           <a href="mailto:miami@bernardogroup.com">miami@bernardogroup.com</a>
         </div>
 
         <div className="f-contact-item">
-          <h4>Geral</h4>
+          <h4>{dict.presence.general}</h4>
           <a href="mailto:contato@bernardogroup.com.br">contato@bernardogroup.com.br</a>
-          <a href="#">Trabalhe Conosco</a>
+          <a href="#">{dict.presence.work_with_us}</a>
         </div>
       </div>
 

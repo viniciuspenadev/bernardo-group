@@ -9,7 +9,37 @@
     "title_1": "Construindo o Futuro,",
     "title_2": "Moldando o Horizonte.",
     "subtitle": "A holding que administra a excelência através do design, da engenharia e da tecnologia em vidros.",
-    "cta": "Conheça o Grupo"
+    "cta": "Conheça o Grupo",
+    "slides": [
+      {
+        "id": "01",
+        "title": "Steel",
+        "subtitle": "Frame",
+        "desc": "Construção a seco de alta precisão, sustentabilidade e rapidez para projetos modernos.",
+        "label": "STEEL FRAME"
+      },
+      {
+        "id": "02",
+        "title": "Planejados",
+        "subtitle": "Sob Medida",
+        "desc": "Mobiliário de alto padrão com design exclusivo e acabamentos impecáveis para sua residência.",
+        "label": "PLANEJADOS"
+      },
+      {
+        "id": "03",
+        "title": "Reformas e Obras",
+        "subtitle": "Alto Padrão",
+        "desc": "Execução de obras complexas e reformas com gestão detalhada e padrão de excelência Bernardo.",
+        "label": "OBRAS"
+      },
+      {
+        "id": "04",
+        "title": "Technoglass",
+        "subtitle": "Vidros Premium",
+        "desc": "Soluções avançadas em vidros de alta performance, aliando estética e proteção térmica.",
+        "label": "TECHNOGLASS"
+      }
+    ]
   },
   "companies": {
     "title": "Nossas Empresas",
@@ -55,6 +85,18 @@
     "usa_title": "Estados Unidos",
     "usa_desc": "Hub de Operações Globais & Investimentos Internacionais.",
     "br_title": "Brasil",
-    "br_desc": "Centro de Execução & Desenvolvimento de Projetos de Alto Padrão."
+    "br_desc": "Centro de Execução & Desenvolvimento de Projetos de Alto Padrão.",
+    "address_sp": "Av. Pedroso de Morais, 2616 - Alto de Pinheiros, São Paulo - SP, 05420-003",
+    "address_cp": "Av. Dr. Jesuíno Marcondes Machado, 70 - Nova Campinas, Campinas - SP, 13092-108",
+    "office_br_sp": "Escritório São Paulo",
+    "office_br_cp": "Escritório Campinas",
+    "office_usa": "Escritório Miami",
+    "general": "Geral",
+    "work_with_us": "Trabalhe Conosco"
+  },
+  "segments": {
+    "title": "Segmentos em que atuamos com histórico de",
+    "success": "sucesso",
+    "desc": "Conhecemos os benefícios de um planejamento estratégico bem feito e da execução perfeita dos serviços, priorizando segurança e resultados impecáveis."
   }
 }

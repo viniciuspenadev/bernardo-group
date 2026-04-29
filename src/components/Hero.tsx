@@ -6,40 +6,17 @@ import Image from "next/image";
 export default function Hero({ dict }: { dict: any }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
-    {
-      id: "01",
-      title: "Steel",
-      subtitle: "Frame",
-      desc: "Construção a seco de alta precisão, sustentabilidade e rapidez para projetos modernos.",
-      image: "/Luxury_contemporary_twostory_house_ultra_realistic_5cae988f6b.jpeg",
-      label: "STEEL FRAME"
-    },
-    {
-      id: "02",
-      title: "Planejados",
-      subtitle: "Sob Medida",
-      desc: "Mobiliário de alto padrão com design exclusivo e acabamentos impecáveis para sua residência.",
-      image: "/Luxury_contemporary_twostory_house_ultra_realistic_5cae988f6b.jpeg", 
-      label: "PLANEJADOS"
-    },
-    {
-      id: "03",
-      title: "Reformas e Obras",
-      subtitle: "Alto Padrão",
-      desc: "Execução de obras complexas e reformas com gestão detalhada e padrão de excelência Bernardo.",
-      image: "/Luxury_contemporary_twostory_house_ultra_realistic_5cae988f6b.jpeg",
-      label: "OBRAS"
-    },
-    {
-      id: "04",
-      title: "Technoglass",
-      subtitle: "Vidros Premium",
-      desc: "Soluções avançadas em vidros de alta performance, aliando estética e proteção térmica.",
-      image: "/Luxury_contemporary_twostory_house_ultra_realistic_5cae988f6b.jpeg",
-      label: "TECHNOGLASS"
-    }
+  const slideImages = [
+    "/Luxury_contemporary_twostory_house_ultra_realistic_5cae988f6b.jpeg",
+    "/Luxury_contemporary_twostory_house_ultra_realistic_5cae988f6b.jpeg",
+    "/Luxury_contemporary_twostory_house_ultra_realistic_5cae988f6b.jpeg",
+    "/Luxury_contemporary_twostory_house_ultra_realistic_5cae988f6b.jpeg"
   ];
+
+  const slides = dict.hero.slides.map((slide: any, index: number) => ({
+    ...slide,
+    image: slideImages[index]
+  }));
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -103,7 +80,7 @@ export default function Hero({ dict }: { dict: any }) {
                 {slide.desc}
               </p>
               <div className="hero-actions">
-                <a href="#empresas" className="btn-hero-steel">SAIBA MAIS</a>
+                <a href="#empresas" className="btn-hero-steel">{dict.hero.cta}</a>
               </div>
             </div>
           </div>

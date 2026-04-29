@@ -1,7 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Segments = ({ dict }: { dict?: any }) => {
+const Segments = ({ dict }: { dict: any }) => {
+  const segDict = dict?.segments;
+  if (!segDict) return null;
+
   const segments = [
     {
       id: 1,
@@ -30,12 +33,11 @@ const Segments = ({ dict }: { dict?: any }) => {
       <div className="container segments-header">
         <h2 className="segments-title">
           <span className="accent-mark"></span>
-          Segmentos em que atuamos<br/>
-          com histórico de<br/>
-          <span className="steel-text">sucesso</span>
+          {segDict.title}<br/>
+          <span className="steel-text">{segDict.success}</span>
         </h2>
         <p className="segments-desc">
-          Conhecemos os benefícios de um planejamento estratégico bem feito e da execução perfeita dos serviços, priorizando segurança e resultados impecáveis.
+          {segDict.desc}
         </p>
       </div>
 

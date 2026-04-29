@@ -9,7 +9,37 @@
     "title_1": "Building the Future,",
     "title_2": "Shaping the Horizon.",
     "subtitle": "The holding that manages excellence through design, engineering, and glass technology.",
-    "cta": "Meet the Group"
+    "cta": "Meet the Group",
+    "slides": [
+      {
+        "id": "01",
+        "title": "Steel",
+        "subtitle": "Frame",
+        "desc": "High-precision dry construction, sustainability, and speed for modern projects.",
+        "label": "STEEL FRAME"
+      },
+      {
+        "id": "02",
+        "title": "Custom",
+        "subtitle": "Furniture",
+        "desc": "High-end furniture with exclusive design and impeccable finishes for your residence.",
+        "label": "CUSTOM FURNITURE"
+      },
+      {
+        "id": "03",
+        "title": "Renovations",
+        "subtitle": "High-End",
+        "desc": "Execution of complex works and renovations with detailed management and Bernardo standard of excellence.",
+        "label": "RENOVATIONS"
+      },
+      {
+        "id": "04",
+        "title": "Technoglass",
+        "subtitle": "Premium Glass",
+        "desc": "Advanced solutions in high-performance glass, combining aesthetics and thermal protection.",
+        "label": "TECHNOGLASS"
+      }
+    ]
   },
   "companies": {
     "title": "Our Companies",
@@ -55,6 +85,18 @@
     "usa_title": "United States",
     "usa_desc": "Global Operations Hub & International Investments.",
     "br_title": "Brazil",
-    "br_desc": "Execution Center & High-End Projects Development."
+    "br_desc": "Execution Center & High-End Projects Development.",
+    "address_sp": "Av. Pedroso de Morais, 2616 - Alto de Pinheiros, São Paulo - SP, 05420-003",
+    "address_cp": "Av. Dr. Jesuíno Marcondes Machado, 70 - Nova Campinas, Campinas - SP, 13092-108",
+    "office_br_sp": "São Paulo Office",
+    "office_br_cp": "Campinas Office",
+    "office_usa": "Miami Office",
+    "general": "General",
+    "work_with_us": "Work with Us"
+  },
+  "segments": {
+    "title": "Segments we operate with a record of",
+    "success": "success",
+    "desc": "We know the benefits of well-executed strategic planning and perfect service delivery, prioritizing safety and impeccable results."
   }
 }
